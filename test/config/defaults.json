@@ -1,0 +1,11 @@
+{
+  "webdriverio": {
+    "viewportSize": {
+      "width": "950",
+      "height": "1000"
+    },
+    "defaultWait": "5000",
+    "asyncWait": "1250",
+    "asyncWaitMore": "3000"
+  }
+}

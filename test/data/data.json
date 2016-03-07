@@ -1,0 +1,110 @@
+{
+  "assets": {
+    "0": "http://sajjad.nyc/javascripts/vendor/classie.js",
+    "1": "http://sajjad.nyc/javascripts/vendor/menu.js",
+    "2": "http://sajjad.nyc/javascripts/vendor/materialize.min.js",
+    "3": "http://sajjad.nyc/javascripts/vendor/init.js",
+    "4": "http://sajjad.nyc/stylesheets/vendor/materialize.min.css",
+    "5": "http://sajjad.nyc/stylesheets/vendor/pace.css",
+    "6": "http://sajjad.nyc/stylesheets/style.css",
+    "7": "http://sajjad.nyc/javascripts/vendor/jquery-1.11.3.min.js",
+    "8": "http://sajjad.nyc/javascripts/main.js",
+    "9": "http://sajjad.nyc/javascripts/vendor/pace.js",
+    "10": "http://sajjad.nyc/javascripts/vendor/modernizr-2.8.3.min.js",
+    "11": "http://fonts.googleapis.com/icon?family=Material+Icons",
+    "12": "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800",
+    "13": "http://fonts.googleapis.com/css?family=Exo+2:300italic,100italic,200italic,200,900italic,300,400,100,400italic,900",
+    "14": "https://vimeo.com/100902001",
+    "15": "http://sajjad.nyc/images/backgrounds/supernova.jpg",
+    "16": "http://sajjad.nyc/images/logo.png",
+    "17": "http://sajjad.nyc/images/banners/resume-builder.jpg",
+    "18": "http://sajjad.nyc/images/banners/one.png",
+    "19": "http://sajjad.nyc/images/banners/two.jpg",
+    "20": "http://sajjad.nyc/images/banners/three.jpg",
+    "21": "http://sajjad.nyc/images/clients/amazon.png",
+    "22": "http://sajjad.nyc/images/clients/doubleclick.png",
+    "23": "http://sajjad.nyc/images/clients/wetv.png",
+    "24": "http://sajjad.nyc/images/clients/amc.png",
+    "25": "http://sajjad.nyc/images/clients/adcade.png",
+    "26": "http://sajjad.nyc/images/clients/comixology.png",
+    "27": "http://sajjad.nyc/images/clients/amplify.png",
+    "28": "http://sajjad.nyc/images/clients/sony.png"
+  },
+  "elements": {
+    "1": "#introduction",
+    "2": ".first-name",
+    "3": ".last-name",
+    "4": ".description",
+    "5": ".bottom-button-div",
+    "6": "//*[@id='introduction']/div/div/a[1]/i",
+    "7": "#trigger-overlay",
+    "8": "#site",
+    "9": "#overlay",
+    "10": "#about",
+    "11": "//*[@id='about']/div/div[3]/div/div/div[2]/img",
+    "12": "//*[@id='more']/div/div[1]/div[1]/a",
+    "13": "//*[@id='more']/div/div[1]/div[2]/a",
+    "14": "//*[@id='more']/div/div[1]/div[3]/a",
+    "15": "#automation",
+    "16": "//*[@id='automation']/div/div/div/div/div/div[3]/div[1]/iframe",
+    "17": "#bug-tracking",
+    "18": "#code",
+    "19": "#blog",
+    "20": "#campaigns",
+    "21": "//*[@id='campaigns']/div[1]/div/div/div/div/div[1]/a",
+    "22": "//*[@id='campaigns']/div[1]/div/div/div/div/div[2]/a",
+    "23": "//*[@id='campaigns']/div[1]/div/div/div/div/div[3]/a",
+    "24": "#footer"
+  },
+  "anchors": {
+    "0": "#scrollto-about",
+    "1": "#scrollto-code",
+    "2": "#scrollto-blog",
+    "3": "#scrollto-campaigns"
+  },
+  "menu": {
+    "open": "#menu-open",
+    "close": "#menu-close",
+    "introduction": "#goto-introduction",
+    "code": "#goto-code",
+    "blog": "#goto-blog",
+    "campaigns": "#goto-campaigns",
+    "contact": "#goto-contact"
+  },
+  "links": {
+    "0": "#user-story",
+    "1": "#automating-tests-for-my-site",
+    "2": "#resume-builder-github",
+    "3": "#resume-builder-code",
+    "4": "#post-on-automation",
+    "5": "#post-on-automation-2",
+    "6": "#post-on-webdriverio",
+    "7": "#print-resume",
+    "8": "#view-resume",
+    "9": "#download-resume",
+    "10": "#linkedin",
+    "11": "#twitter",
+    "12": "#instagram",
+    "13": "#withpulp"
+  },
+  "progress": {
+    "main": ".pace-inactive",
+    "div": ".pace-progress",
+    "attribute": "data-progress-text",
+    "value": "100%"
+  },
+  "contact": {
+    "form": {
+      "name": "#name",
+      "email": "#email",
+      "message": "#message",
+      "submit": "#submit",
+      "contact": "#contact"
+    },
+    "values": {
+      "name": "Bruce Wayne",
+      "email": "bWayne@gmail.com",
+      "message": "Wayne Enterprises is interested in your profile."
+    }
+  }
+}
