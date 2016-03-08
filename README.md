@@ -18,6 +18,7 @@
 ### TODO
 #### v2 MVP
 
+- [ ] SEO, Page Analytics
 - [ ] Modular Scale
 - [ ] SASS
 - [ ] WebPack
