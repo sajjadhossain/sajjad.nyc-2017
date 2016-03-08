@@ -18,9 +18,10 @@
 ### TODO
 #### v2 MVP
 
+- [ ] Modular Scale
 - [ ] SASS
 - [ ] WebPack
-- [ ] End-To-End Testing
+- [ ] End-To-End Tests
 - [X] Finish Featured posts
 	- [X] Automating tests for sajjad.nyc.
 	- [X] Getting Started with WebDriverIO.

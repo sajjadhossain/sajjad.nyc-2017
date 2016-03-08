@@ -5,6 +5,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: #ffffff;
+    background: #c0ca33;
+}
+
+::selection {
+    color: #ffffff;
+    background: #c0ca33;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
 }
@@ -15,34 +25,36 @@ main {
 
 h1 {
     font-weight: 700;
+    font-size: 3.5rem;
 }
 
 h2 {
     font-weight: 500;
+    font-size: 3.5rem;
 }
 
 h3 {
     font-weight: 400;
+    font-size: 2.5rem;
 }
 
 h4 {
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+h5 {
+    font-weight: 200;
+    font-size: 1.25rem;
+}
+
+.height-100vh {
+    height:100vh;
+    width:100%;
 }
 
 .height-200 {
     max-height: 200px;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.collection-item a {
-    color: #000000;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
 }
 
 nav {
@@ -53,17 +65,11 @@ nav {
     line-height: 56px;
 }
 
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
-    color: #c0ca33;
-}
-
-.card .card-action a:hover:not(.btn):not(.btn-large):not(.btn-floating) {
-    color: #827717;
-}
-
 a {
     color: #c0ca33;
     cursor: pointer;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -85,6 +91,11 @@ blockquote {
 }
 
 /* Collections */
+.collection-item a {
+    color: #000000;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
 
 .collection-item a:hover {
     color: #c0ca33;
@@ -98,6 +109,16 @@ blockquote {
 
 .collection-item {
     border-bottom: 0px solid #e0e0e0 !important;
+}
+
+/* Card button */
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+    color: #c0ca33;
+}
+
+.card .card-action a:hover:not(.btn):not(.btn-large):not(.btn-floating) {
+    color: #e6ee9c;
 }
 
 /* Helpers */
@@ -115,7 +136,7 @@ blockquote {
 }
 
 .padding-bottom {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .bottom-button-div {
@@ -158,6 +179,7 @@ blockquote {
 }
 
 .landing {
+    background: url("../images/backgrounds/supernova.jpg");
     height:100vh;
     width: 100%;
     -webkit-background-size: cover;
@@ -181,6 +203,267 @@ blockquote {
     float: left;
 }
 
+/* ==========================================================================
+   Screen size agnostic
+   ========================================================================== */
+
+/* Menu */
+/* Overlay style */
+.overlay {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    z-index: 10000000;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+    /* Styles */
+}
+.overlay .close-button {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border: none;
+    z-index: 10000001;
+}
+
+/* Menu style */
+.overlay ul {
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.overlay ul li {
+    padding-bottom: 10px;
+    min-height: 54px;
+}
+
+.overlay ul li a {
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+    color: #c0ca33;
+}
+
+/* Effects */
+.overlay-hugeinc {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.overlay-hugeinc {
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+}
+
+.overlay-hugeinc ul {
+    opacity: 0.4;
+    -webkit-transform: translateY(-25%) rotateX(35deg);
+    transform: translateY(-25%) rotateX(35deg);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open ul {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close ul {
+    -webkit-transform: translateY(25%) rotateX(-35deg);
+    transform: translateY(25%) rotateX(-35deg);
+}
+
+/* Menu Button*/
+.topright {
+    cursor: pointer;
+    position: fixed;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    top: 15px;
+    right: 25px;
+    width: 50px;
+    z-index: 999999;
+}
+
+.remove-font-styles {
+    color: rgba(0,0,0,0.87) !important;
+}
+
+.git-data {
+    border-right: solid #E4E4E4;
+    min-height: 100px;
+}
+
+.git-image {
+    max-width: 250px;
+}
+
+.sub {
+    color: #ffffff;
+}
+
+/* Chip, restore padding */
+.chip {
+    margin-left: 2px !important;
+    margin-bottom: 2px !important;
+}
+
+.chips-padding {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.padding-top {
+    padding-top: 2.5rem;
+}
+
+.padding-bottom {
+    padding-bottom: 2.5rem;
+}
+
+.padding-right {
+    padding-right: 0.75rem;
+}
+
+.smaller {
+    font-size: 75%;
+}
+
+.smallest {
+    font-size: 65%;
+    font-style: italic;
+}
+
+.top-content {
+    padding-bottom: 2rem;
+}
+
+.bottom-content-padding-bottom {
+    padding-bottom:2rem;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.my-lists {
+    padding-left: 2.33rem;
+    padding-right: 2.33rem;}
+
+.my-list-item {
+    list-style-type: disc;
+}
+
+.post-title {
+    font-size: 3.25rem !important;
+    font-weight: 400;
+    line-height: 1em !important;
+}
+
+code.highlighter-rouge {
+    color: #c0ca33;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   Materialize helper classes
+   ========================================================================== */
+
+/* Placeholder */
+input::placeholder {
+    color: rgba(0,0,0,0.87);
+}
+
+/* Label color */
+.input-field label {
+    color: rgba(0,0,0,0.87);
+}
+/* Label focus color */
+.input-field input[type=text]:focus + label {
+    color: #c0ca33;
+}
+/* Label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #c0ca33;
+    box-shadow: 0 1px 0 0 #c0ca33;
+}
+/* Valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #c0ca33;
+    box-shadow: 0 1px 0 0 #c0ca33;
+}
+/* Invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #b71c1c;
+    box-shadow: 0 1px 0 0 #b71c1c;
+}
+/* Label focus color */
+.input-field textarea[type=textarea]:focus + label {
+    color: #c0ca33;
+}
+/* Label underline focus color */
+.input-field textarea[type=textarea]:focus {
+    border-bottom: 1px solid #c0ca33;
+    box-shadow: 0 1px 0 0 #c0ca33;
+}
+/* Valid color */
+.input-field textarea[type=textarea].valid {
+    border-bottom: 1px solid #4caf50;
+    box-shadow: 0 1px 0 0 #4caf50;
+}
+/* Invalid color */
+.input-field textarea[type=textarea].invalid {
+    border-bottom: 1px solid #b71c1c;
+    box-shadow: 0 1px 0 0 #b71c1c;
+}
+/* Label focus color */
+.input-field input[type=email]:focus + label {
+    color: #c0ca33;
+}
+/* Label underline focus color */
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid #c0ca33;
+    box-shadow: 0 1px 0 0 #c0ca33;
+}
+/* Valid color */
+.input-field input[type=email].valid {
+    border-bottom: 1px solid #4caf50;
+    box-shadow: 0 1px 0 0 #4caf50;
+}
+/* Invalid color */
+.input-field input[type=email].invalid {
+    border-bottom: 1px solid #b71c1c;
+    box-shadow: 0 1px 0 0 #4caf50;
+}
+/* Icon prefix focus color */
+.input-field .prefix.active {
+    color: #c0ca33;
+}
+
 /*
 * From css-tricks.com
 * http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
@@ -190,8 +473,20 @@ blockquote {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
+    .first-name {
+        font-size: 3rem;
+    }
+
+    .last-name {
+        font-size: 3rem;
+    }
+
     .description {
         font-size: 1.5rem;
+    }
+
+    .overlay ul {
+        font-size: 2rem;
     }
 }
 
@@ -211,8 +506,20 @@ and (max-width : 320px) {
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
+    .first-name {
+        font-size: 4rem;
+    }
+
+    .last-name {
+        font-size: 4rem;
+    }
+
     .description {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    .overlay ul {
+        font-size: 2.5rem;
     }
 }
 
@@ -234,7 +541,7 @@ and (orientation : portrait) {
 
 /* Desktops and laptops ----------- */
 @media only screen
-and (min-width : 1224px) {
+and (min-width : 1025px) {
     .first-name {
         font-size: 5rem;
     }
@@ -244,7 +551,11 @@ and (min-width : 1224px) {
     }
 
     .description {
-        font-size: 1.5rem;
+        font-size: 3rem;
+    }
+
+    .overlay ul {
+        font-size: 3rem;
     }
 }
 
@@ -260,7 +571,11 @@ and (min-width : 1824px) {
     }
 
     .description {
-        font-size: 1.5rem;
+        font-size: 3rem;
+    }
+
+    .overlay ul {
+        font-size: 3rem;
     }
 }
 
