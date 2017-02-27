@@ -1,0 +1,349 @@
+@import '_variables.scss';
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	font-family: $font_0, $font_1;
+}
+::-moz-selection {
+	color: $white;
+	background: $color_key_lime_pie_approx;
+}
+::selection {
+	color: $white;
+	background: $color_key_lime_pie_approx;
+}
+p {
+	font-family: $font_0, $font_1;
+}
+main {
+	flex: 1 0 auto;
+}
+h1 {
+	font-weight: 700;
+	font-size: 3.5rem;
+}
+h2 {
+	font-weight: 500;
+	font-size: 3.5rem;
+}
+h3 {
+	font-weight: 400;
+	font-size: 2.5rem;
+}
+h4 {
+	font-weight: 400;
+	font-size: 2rem;
+}
+h5 {
+	font-weight: 200;
+	font-size: 1.25rem;
+}
+.height-100vh {
+	height: 100vh;
+	width: 100%;
+}
+.height-200 {
+	max-height: 200px;
+}
+nav {
+	color: $white;
+	background-color: $color_key_lime_pie_approx;
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+}
+a {
+	color: $color_key_lime_pie_approx;
+	cursor: pointer;
+	text-decoration: none;
+	&:hover {
+		cursor: pointer;
+		color: $color_primrose_approx;
+		text-decoration: none;
+	}
+}
+blockquote {
+	margin: 20px 0;
+	padding-left: 1.5rem;
+	border-left: 5px solid $color_key_lime_pie_approx;
+}
+.collection-item {
+	border-bottom: 0 solid $color_bon_jour_approx !important;
+	a {
+		color: $black;
+		text-decoration: none;
+		&:hover {
+			color: $color_key_lime_pie_approx;
+			text-decoration: none;
+		}
+	}
+}
+.collection {
+	border: 0 solid $color_bon_jour_approx;
+}
+.remove-margin-bottom {
+	margin-bottom: 0 !important;
+}
+.remove-padding {
+	padding: 0 !important;
+}
+.padding-top {
+	padding-top: 20px;
+	padding-top: 2.5rem;
+}
+.padding-bottom {
+	padding-bottom: 20px;
+	padding-bottom: 2.5rem;
+}
+.bottom-button-div {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.landing {
+	background: $url_0;
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+}
+.clear {
+	clear: both;
+}
+.portfolio {
+	.portfolio-holder {
+		clear: both;
+		text-align: center;
+	}
+	img {
+		width: 25%;
+		display: inline-block;
+		float: left;
+	}
+}
+.overlay {
+	font-family: $font_2, $font_1;
+	font-weight: 100;
+	text-transform: uppercase;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: $black;
+	z-index: 10000000;
+	.overlay-close {
+	}
+	.close-button {
+		cursor: pointer;
+		position: absolute;
+		right: 20px;
+		top: 15px;
+		border: none;
+		z-index: 10000001;
+	}
+	ul {
+		margin: 0 auto;
+		list-style: none;
+		padding: 0;
+		li {
+			padding-bottom: 10px;
+			min-height: 54px;
+			a {
+				color: $white;
+				//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+				transition: color 0.2s;
+				&:hover {
+					color: $color_key_lime_pie_approx;
+				}
+				&:focus {
+					color: $color_key_lime_pie_approx;
+				}
+			}
+		}
+	}
+}
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: opacity 0.5s, visibility 0s 0.5s;
+	//Instead of the line below you could use @include perspective($p)
+	perspective: 1200px;
+	&.open {
+		opacity: 1;
+		visibility: visible;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: opacity 0.5s;
+		ul {
+			opacity: 1;
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotateX(0deg);
+		}
+	}
+	ul {
+		opacity: 0.4;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateY(-25%) rotateX(35deg);
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: transform 0.5s, opacity 0.5s;
+	}
+	&.close ul {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateY(25%) rotateX(-35deg);
+	}
+}
+.topright {
+	cursor: pointer;
+	position: fixed;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: 0 2px 2px $black_40;
+	top: 15px;
+	right: 25px;
+	width: 50px;
+	z-index: 999999;
+}
+.remove-font-styles {
+	color: $black_87 !important;
+}
+.git-data {
+	border-right: solid $color_mercury_approx;
+	min-height: 100px;
+}
+.git-image {
+	max-width: 250px;
+}
+.sub {
+	color: $white;
+}
+.chip {
+	margin-left: 2px !important;
+	margin-bottom: 2px !important;
+}
+.chips-padding {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
+.padding-right {
+	padding-right: 0.75rem;
+}
+.smaller {
+	font-size: 75%;
+}
+.smallest {
+	font-size: 65%;
+	font-style: italic;
+}
+.top-content {
+	padding-bottom: 2rem;
+}
+.bottom-content-padding-bottom {
+	padding-bottom: 2rem;
+}
+.disabled {
+	pointer-events: none;
+	cursor: default;
+}
+.my-lists {
+	padding-left: 2.33rem;
+	padding-right: 2.33rem;
+}
+.my-list-item {
+	list-style-type: disc;
+}
+.post-title {
+	font-size: 3.25rem !important;
+	font-weight: 400;
+	line-height: 1em !important;
+}
+input::placeholder {
+	color: $black_87;
+}
+.input-field {
+	label {
+		color: $black_87;
+	}
+	input[type=text] {
+		&:focus {
+			border-bottom: 1px solid $color_key_lime_pie_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 0 $color_key_lime_pie_approx;
+			+ label {
+				color: $color_key_lime_pie_approx;
+			}
+		}
+		&.valid {
+			border-bottom: 1px solid $color_key_lime_pie_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 0 $color_key_lime_pie_approx;
+		}
+		&.invalid {
+			border-bottom: 1px solid $color_thunderbird_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 0 $color_thunderbird_approx;
+		}
+	}
+	textarea[type=textarea] {
+		&:focus {
+			border-bottom: 1px solid $color_key_lime_pie_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 0 $color_key_lime_pie_approx;
+			+ label {
+				color: $color_key_lime_pie_approx;
+			}
+		}
+		&.valid {
+			border-bottom: 1px solid $color_apple_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 0 $color_apple_approx;
+		}
+		&.invalid {
+			border-bottom: 1px solid $color_thunderbird_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 0 $color_thunderbird_approx;
+		}
+	}
+	input[type=email] {
+		&:focus {
+			border-bottom: 1px solid $color_key_lime_pie_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 0 $color_key_lime_pie_approx;
+			+ label {
+				color: $color_key_lime_pie_approx;
+			}
+		}
+		&.valid {
+			border-bottom: 1px solid $color_apple_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 0 $color_apple_approx;
+		}
+		&.invalid {
+			border-bottom: 1px solid $color_thunderbird_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 0 $color_apple_approx;
+		}
+	}
+	.prefix.active {
+		color: $color_key_lime_pie_approx;
+	}
+}
+
+footer.page-footer {
+	margin-top: 0;
+	padding-top: 0;
+}
+.card .card-action a {
+	&:not(.btn):not(.btn-large):not(.btn-floating) {
+		color: $color_key_lime_pie_approx;
+	}
+	&:hover:not(.btn):not(.btn-large):not(.btn-floating) {
+		color: $color_primrose_approx;
+	}
+}
+code.highlighter-rouge {
+	color: $color_key_lime_pie_approx;
+	font-weight: 700;
+}

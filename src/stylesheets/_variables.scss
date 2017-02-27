@@ -1,0 +1,128 @@
+// Monochrome Colors
+
+$dark:         #000;
+$gray-darker:  lighten(#000, 13.5%); // #222
+$gray-dark:    lighten(#000, 20%);   // #333
+$gray:         lighten(#000, 33.5%); // #555
+$gray-light:   lighten(#000, 46.7%); // #777
+$gray-lighter: lighten(#000, 93.5%); // #eee
+$light:        #fff;
+
+
+// Brand Colors
+
+$primary-color: #60c0ed;
+$secondary-color: #0f161e;
+$neutral-color: #f5feff;
+$offset-color: #e69149;
+$highlight-color: #cd571a;
+
+$white: #ffffff;
+$color_key_lime_pie_approx: #c0ca33;
+$color_primrose_approx: #e6ee9c;
+$black: #000000;
+$color_bon_jour_approx: #e0e0e0;
+$black_40: rgba(0, 0, 0, 0.4);
+$black_87: rgba(0,0,0,0.87);
+$color_mercury_approx: #e4e4e4;
+$color_thunderbird_approx: #b71c1c;
+$color_apple_approx: #4caf50;
+
+// Global Colors
+
+$font-color: $black_87;
+$header-color: $black_87;
+$link-color: $color_key_lime_pie_approx;
+
+// Alert Colors
+
+$positive-color: #6CEE38;
+$negative-color: #FC6262;
+$caution-color: #FABC28;
+$info-color: #30E3F6;
+
+// Speed
+
+$fastest: 50ms;
+$faster: 250ms;
+$fast: 500ms;
+$slow: 1000ms;
+$slower: 2000ms;
+$slowest: 3000ms;
+
+// Sizes
+
+$quantum: 0.05em;
+$atomic: 0.10em;
+$micro: 0.15em;
+$mini: 0.25em;
+$tiny: 0.5em;
+$small: 0.75em;
+$base: 1em;
+$large: 2em;
+$huge: 3em;
+$jumbo: 4em;
+$massive: 5em;
+$giant: 6em;
+$colossal: 7em;
+$titanic: 8em;
+$galactic: 9em;
+$god: 10em;
+
+$fluid-sixteenth: 6vh;
+$fluid-eighth: 12.5vh;
+$fluid-quarter: 25vh;
+$fluid-third: 33.3333vh;
+$fluid-half: 50vh;
+$fluid-two-thirds: 66.6666vh;
+$fluid-three-quarters: 75vh;
+$fluid-full: 100vh;
+
+$sixteenth: 6%;
+$eighth: 12.5%;
+$quarter: 25%;
+$third: 33.3333%;
+$half: 50%;
+$two-thirds: 66.6666%;
+$three-quarters: 75%;
+$full: 100%;
+
+// Typography
+
+$font_0: Open Sans;
+$font_1: sans-serif;
+$font_2: Exo 2;
+
+$font-size-base: 1rem;
+
+// Urls
+
+$url_0: url(http://sajjad.nyc/images/backgrounds/supernova.jpg);
+
+// Modular Scale
+
+$modular-scale-ratio: 1.2;
+$modular-scale-base: $font-size-base;
+
+// Media Queries
+
+$phone-width: 30em;
+$tablet-width: 48em;
+$laptop-width: 62em;
+$desktop-width: 75em;
+$large-desktop-width: 100em;
+$huge-desktop-width: 125em;
+$jumbo-desktop-width: 175em;
+$massive-desktop-width: 200em;
+$giant-desktop-width: 250em;
+$colossal-desktop-width: 300em;
+
+// Animations
+
+@keyframes loading {
+  50% {
+    opacity: 1;
+    background: $black;
+    transform: scaleY(1.5);
+  }
+}
