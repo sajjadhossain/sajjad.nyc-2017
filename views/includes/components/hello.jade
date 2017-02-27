@@ -1,20 +1,2 @@
-- var message = false
-div.row
-    div#footer-form.col.s12
-        form#contact(method = 'post', action = 'contact/send')
-            div.row.padding-top
-                p.form-group.input-field.col.s12
-                    label.lime-text
-                        span.contact-form-labels Name*
-                    input#name.form-control(type='text', name = 'name', placeholder='Bruce Wayne')
-                p.form-group.input-field.col.s12
-                    label.lime-text
-                        span.contact-form-labels Email*
-                    input#email.form-control(type='email', name = 'email' placeholder='bwayne@wayneenterprises.com')
-                p.form-group.input-field.col.s12
-                    label.lime-text
-                        span.contact-form-labels Message
-                    textarea#message.form-control.validate.materialize-textarea.contact-form-values(value='' placeholder='Wayne Enterprises is interested in your profile.' name='message' type='textarea', required, message=true)
-            div(class='right')
-                    button#submit(type='submit').btn-large Submit
-                        i.material-icons.left send
+div
+    a.flow-text(href='mailto:sajjad@withpulp.com') sajjad@withpulp.com
