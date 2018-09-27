@@ -3,3 +3,7 @@ gmail.json
 .idea
 .DS_Store
 /public/videos
+/public/javascript/bundle.js
+/public/javascript/bundle.js.map
+/public/stylesheets/style.css
+/public/stylesheets/style.css.map

@@ -620,7 +620,7 @@ blockquote {
   text-align: center; }
 
 .landing {
-  background: url(http://sajjad.nyc/images/backgrounds/supernova.jpg);
+  background: url(/images/backgrounds/supernova.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover; }
